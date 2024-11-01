@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <!-- <h3>Formulario com get</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="q" id="">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h3>Formulario com post</h3>
+    <form method="post" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form> -->
+
+    <h3>Formulario de login teste</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"><br><br>
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email" ><br><br>
+        <input type="password" name="senha" id="senha" placeholder="Nova senha"><br><br>
+        
+        <label>Data de nascimento</label><br><br>
+        <select name="dia" id="dias">
+        </select>
+        
+        <select name="mes">
+            <option value="Jan">Jan</option>
+            <option value="Fev">Fev</option>
+            <option value="Mar">Mar</option>
+            <option value="Abr">Abr</option>
+            <option value="Mai">Mai</option>
+            <option value="Jun">jun</option>
+            <option value="Jul">jun</option>
+            <option value="Ago">jun</option>
+            <option value="Set">jun</option>
+            <option value="Out">jun</option>
+            <option value="Nov">jun</option>
+            <option value="Dez">jun</option>
+        </select>
+        
+        <select name="ano" id="yearSelect"></select><br><br>
+
+        <label>Gênero</label><br><br>
+        
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino">
+
+        <label for="masculino">masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino"><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
