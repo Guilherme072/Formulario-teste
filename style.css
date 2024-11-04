@@ -9,7 +9,7 @@ body {
 form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
@@ -20,7 +20,7 @@ form {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     border: 1px solid #ddd;
     border-radius: 9px;
     box-sizing: border-box;
@@ -35,19 +35,58 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
+#nome[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+
+#sobrenome[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+
 
 
 /* Botão */
-button[type="submit"] {
+#button[type="submit"] {
     background-color: #4267b2;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
-    border-radius: 3px;
+    border-radius: 9px;
     cursor: pointer;
+    margin: 10px;
 }
 
 /* Hover no botão */
 button[type="submit"]:hover {
     background-color: #365899;
+}
+
+.form-group {
+    text-align: left;
+}
+
+select {
+    height: 30px;
+    width: 130px;
+}
+
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 1px; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
 }

@@ -9,6 +9,18 @@
 <body>
     <h1>Formulario</h1>
 
+    <!-- <h3>Formulario com get</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="q" id="">
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h3>Formulario com post</h3>
+    <form method="post" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form> -->
+
     <h3>Formulario de login teste</h3>
     <form method="get" action="index.html">
         <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -16,10 +28,11 @@
         <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email" ><br><br>
         <input type="password" name="senha" id="senha" placeholder="Nova senha"><br><br>
         
-        <label>Data de nascimento</label><br><br>
-        <select name="dia" id="dias">
-        </select>
-        
+        <div class="form-group">
+            <label>Data de nascimento</label><br><br>
+        </div>
+            <select name="dia" id="dias">
+            </select>
         <select name="mes">
             <option value="Jan">Jan</option>
             <option value="Fev">Fev</option>
@@ -36,18 +49,22 @@
         </select>
         
         <select name="ano" id="yearSelect"></select><br><br>
-
-        <label>Gênero</label><br><br>
         
-        <label for="feminino">Feminino</label>
-        <input type="radio" name="genero" id="feminino" value="feminino">
-
-        <label for="masculino">masculino</label>
-        <input type="radio" name="genero" id="masculino" value="masculino"><br><br>
-
-        <input type="submit" value="Enviar">
-
+        <div class="form-group">
+        <label>Gênero</label><br><br>
+        </div>
+        
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="genero" id="feminino" value="feminino"><br><br>
+            <input type="submit" value="Cadastre-se" id="button">
     </form>
+
+    <footer>
+        2024 - tela para se cadastrar, em fase de criação. By ! Coringa
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
